@@ -1,37 +1,70 @@
+/* Carga la fuente que hemos añadido al proyecto */
+@font-face {
+    src: url('../../fonts/JetBrainsMono-Regular.ttf');
+}
+
 /* Estilo general para toda la aplicación */
 .root {
-    -fx-background-color: #2b2b2b; /* Fondo gris oscuro */
-    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-family: "JetBrains Mono"; /* Usamos nuestra nueva fuente */
+    -fx-background-color: #2b2b2b;
+    -fx-font-size: 14px; /* Aumentamos un poco el tamaño para legibilidad */
 }
 
 /* Estilo para todas las etiquetas de texto */
 .label {
-    -fx-text-fill: #bbbbbb; /* Texto gris claro */
+    -fx-text-fill: #bababa; /* Un poco más claro */
 }
 
 /* Estilo para los botones */
 .button {
-    -fx-background-color: #3c3f41; /* Fondo del botón un poco más claro */
+    -fx-background-color: #3c3f41;
     -fx-text-fill: #bbbbbb;
     -fx-border-color: #555555;
-    -fx-border-radius: 3;
-    -fx-background-radius: 3;
+    -fx-border-radius: 5px; /* Bordes un poco más redondeados */
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 15px; /* Hacemos los botones un poco más grandes */
+
+    /* Transición suave para los efectos */
+    -fx-transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
-    -fx-background-color: #4f5254; /* Color al pasar el ratón por encima */
+    -fx-background-color: #4f5254;
+    -fx-border-color: #777777;
+    /* Efecto de sombra para que el botón "flote" */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 2);
 }
 
 .button:pressed {
-    -fx-background-color: #353535; /* Color al presionar */
+    -fx-background-color: #353535;
+    -fx-scale-x: 0.98; /* Efecto de "presionado" */
+    -fx-scale-y: 0.98;
 }
+
+/* Botón principal (de comparación) */
+#compareButton {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-color: #0d47a1; /* Un color azul para destacarlo */
+    -fx-text-fill: #e3f2fd;
+    -fx-border-color: #0d47a1;
+}
+
+#compareButton:hover {
+    -fx-background-color: #1565c0;
+}
+
+#compareButton:pressed {
+    -fx-background-color: #0a3a82;
+}
+
 
 /* Estilo para los campos de texto */
 .text-field {
     -fx-background-color: #3c3f41;
     -fx-text-fill: #cccccc;
-    -fx-prompt-text-fill: #888888; /* Color del texto de ayuda (prompt) */
+    -fx-prompt-text-fill: #888888;
     -fx-border-color: #555555;
-    -fx-border-radius: 3;
-    -fx-background-radius: 3;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
 }
