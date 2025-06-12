@@ -1,0 +1,37 @@
+/* Estilo general para toda la aplicación */
+.root {
+    -fx-background-color: #2b2b2b; /* Fondo gris oscuro */
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Estilo para todas las etiquetas de texto */
+.label {
+    -fx-text-fill: #bbbbbb; /* Texto gris claro */
+}
+
+/* Estilo para los botones */
+.button {
+    -fx-background-color: #3c3f41; /* Fondo del botón un poco más claro */
+    -fx-text-fill: #bbbbbb;
+    -fx-border-color: #555555;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.button:hover {
+    -fx-background-color: #4f5254; /* Color al pasar el ratón por encima */
+}
+
+.button:pressed {
+    -fx-background-color: #353535; /* Color al presionar */
+}
+
+/* Estilo para los campos de texto */
+.text-field {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #cccccc;
+    -fx-prompt-text-fill: #888888; /* Color del texto de ayuda (prompt) */
+    -fx-border-color: #555555;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
